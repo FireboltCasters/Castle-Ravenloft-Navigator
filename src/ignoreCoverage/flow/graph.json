@@ -1,0 +1,14 @@
+{
+  "nodes":[
+    {"id":"Start","type":"input","data":{"label":"Start"},"position":{"x":260.5,"y":-76},"width":150,"height":36},
+    {"id":"Activity_1","type":"ReactFlowNetzplanNode","position":{"x":363.75,"y":12.05078125},"data":{"id":"Activity_1","instance":{},"label":"Marketing","duration":3},"width":150,"height":78},
+    {"id":"Activity_2","type":"ReactFlowNetzplanNode","position":{"x":180.74302026010503,"y":18.816011366010528},"data":{"id":"Activity_2","instance":{},"label":"Documentation","duration":4},"width":150,"height":78},
+    {"id":"Activity_3","type":"ReactFlowNetzplanNode","position":{"x":281.09898699475065,"y":137.4467292290029},"data":{"id":"Activity_3","instance":{},"label":"Publishing","duration":2},"width":150,"height":78}
+  ],
+  "edges":[
+    {"source":"Start","target":"Activity_1","id":"reactflow__edge-Start-Activity_1"},
+    {"source":"Start","target":"Activity_2","id":"reactflow__edge-Start-Activity_2"},
+    {"source":"Activity_2","target":"Activity_3","id":"reactflow__edge-Activity_2-Activity_3"},
+    {"source":"Activity_1","target":"Activity_3","targetHandle":null,"id":"reactflow__edge-Activity_1-Activity_3"}
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "groups": {
+    "Alex & Anton": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Monday",
+        "time": "10:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "10:30": true
+        }
+      }
+    },
+    "Beate & Bernd": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Monday",
+        "time": "11:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "11:00": true
+        }
+      }
+    },
+    "Christin & Chris": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Monday",
+        "time": "11:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "11:30": true
+        }
+      }
+    },
+    "Detlef & Dorothe": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Monday",
+        "time": "10:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "10:00": true
+        }
+      }
+    },
+    "Egon & Elisbet": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Monday",
+        "time": "10:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "10:30": true
+        }
+      }
+    },
+    "Florian & Fiona": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Monday",
+        "time": "11:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "11:00": true
+        }
+      }
+    },
+    "Gertrut & Gido": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Monday",
+        "time": "11:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "11:30": true
+        }
+      }
+    },
+    "Hans & Herta": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Monday",
+        "time": "12:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "12:00": true
+        }
+      }
+    },
+    "Ingo & Ilka": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Monday",
+        "time": "13:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "13:00": true
+        }
+      }
+    },
+    "Jan & Jaqueline": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Monday",
+        "time": "13:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "13:30": true
+        }
+      }
+    },
+    "Karl & Kristin": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Monday",
+        "time": "12:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "12:30": true
+        }
+      }
+    },
+    "Lena & Lars": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Monday",
+        "time": "13:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "13:00": true
+        }
+      }
+    },
+    "Max & Moritz": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Monday",
+        "time": "15:00"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "15:00": true
+        }
+      }
+    },
+    "Norbert & Nina": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Monday",
+        "time": "14:30"
+      },
+      "possibleSlots": {
+        "Monday": {
+          "14:30": true
+        }
+      }
+    },
+    "Olaf": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Tuesday",
+        "time": "10:00"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "10:00": true
+        }
+      }
+    },
+    "Pascal & Petra": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Tuesday",
+        "time": "10:30"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "10:30": true
+        }
+      }
+    },
+    "Quentin & Quentine": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Tuesday",
+        "time": "11:00"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "11:00": true
+        }
+      }
+    },
+    "Rafael & Rita": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Tuesday",
+        "time": "12:00"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "12:00": true
+        }
+      }
+    },
+    "Stefan & Steffan": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Tuesday",
+        "time": "13:30"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "13:30": true
+        }
+      }
+    },
+    "Thorsten & Tina": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Tuesday",
+        "time": "14:00"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "14:00": true
+        }
+      }
+    },
+    "Uwe & Ula": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Tuesday",
+        "time": "13:30"
+      },
+      "possibleSlots": {
+          "Monday": {
+          "13:30": true
+        },
+        "Tuesday": {
+          "13:30": true,
+            "16:00": true
+        }
+      }
+    },
+    "Verena & Vero": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Tuesday",
+        "time": "14:00"
+      },
+      "possibleSlots": {
+        "Tuesday": {
+          "14:00": true
+        }
+      }
+    },
+    "Wiebke & Werner": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Wednesday",
+        "time": "10:30"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "10:30": true
+        }
+      }
+    },
+    "Xavier & Xena": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Wednesday",
+        "time": "11:00"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "11:00": true
+        }
+      }
+    },
+    "Yannick & Yanine": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Wednesday",
+        "time": "11:30"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "11:30": true
+        }
+      }
+    },
+    "Zola & Zarachias": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Wednesday",
+        "time": "10:00"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "10:00": true
+        }
+      }
+    },
+    "Anton & Bingo": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Wednesday",
+        "time": "10:30"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "10:30": true
+        }
+      }
+    },
+    "Adelle & Chistine": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Wednesday",
+        "time": "11:00"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "11:00": true
+        }
+      }
+    },
+    "Arne & Dargo": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Wednesday",
+        "time": "14:00"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "14:00": true
+        }
+      }
+    },
+    "Adenauer & Egon": {
+      "selectedSlot": {
+        "tutor": "Charles",
+        "day": "Wednesday",
+        "time": "14:30"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "14:30": true
+        }
+      }
+    },
+    "Andiej & Florian": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Wednesday",
+        "time": "14:00"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "14:00": true
+        }
+      }
+    },
+    "Andruschka & Gido": {
+      "selectedSlot": {
+        "tutor": "Andreas",
+        "day": "Wednesday",
+        "time": "14:30"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "14:30": true
+        }
+      }
+    },
+    "Anne & Hilbert": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Wednesday",
+        "time": "15:00"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "15:00": true
+        }
+      }
+    },
+    "Agaragon & Igor": {
+      "selectedSlot": {
+        "tutor": "Bastian",
+        "day": "Wednesday",
+        "time": "14:30"
+      },
+      "possibleSlots": {
+        "Wednesday": {
+          "14:30": true
+        }
+      }
+    },
+    "Arale & Jack": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Thursday",
+        "time": "09:30"
+      },
+      "possibleSlots": {
+        "Thursday": {
+          "09:30": true
+        }
+      }
+    },
+    "Antonia & Kim": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Thursday",
+        "time": "10:00"
+      },
+      "possibleSlots": {
+        "Thursday": {
+          "10:00": true
+        }
+      }
+    },
+    "Alex & Lennart": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Thursday",
+        "time": "10:30"
+      },
+      "possibleSlots": {
+        "Thursday": {
+          "10:30": true
+        }
+      }
+    },
+    "Amor & Malte": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Thursday",
+        "time": "11:00"
+      },
+      "possibleSlots": {
+        "Thursday": {
+          "11:00": true
+        }
+      }
+    },
+    "Astel & Nils": {
+      "selectedSlot": {
+        "tutor": "Dieter",
+        "day": "Thursday",
+        "time": "11:30"
+      },
+      "possibleSlots": {
+        "Thursday": {
+          "11:30": true
+        }
+      }
+    }
+  },
+  "tutors": {
+    "Andreas": {
+      "Monday": {
+        "10:30": true,
+        "11:00": true,
+        "11:30": true,
+        "12:30": true,
+        "13:00": true,
+        "13:30": true,
+        "14:00": true,
+        "14:30": true,
+        "15:00": true,
+        "15:30": true
+      },
+      "Wednesday": {
+        "10:30": true,
+        "11:00": true,
+        "11:30": true,
+        "14:00": true,
+        "14:30": true,
+        "15:00": true
+      }
+    },
+    "Bastian": {
+      "Monday": {
+        "10:00": true,
+        "10:30": true,
+        "11:00": true,
+        "11:30": true,
+        "13:00": true,
+        "13:30": true,
+        "14:00": true,
+        "14:30": true
+      },
+      "Tuesday": {
+        "10:00": true,
+        "10:30": true,
+        "11:00": true,
+        "11:30": true
+      },
+      "Wednesday": {
+        "10:00": true,
+        "10:30": true,
+        "11:00": true,
+        "14:30": true,
+        "15:00": true
+      }
+    },
+    "Charles": {
+      "Monday": {
+        "12:00": true,
+        "12:30": true,
+        "13:00": true,
+        "13:30": true,
+        "14:00": true,
+        "14:30": true,
+        "15:00": true,
+        "15:30": true
+      },
+      "Tuesday": {
+        "12:00": true,
+        "12:30": true,
+        "13:00": true,
+        "13:30": true,
+        "14:00": true,
+        "14:30": true,
+        "15:00": true,
+        "15:30": true
+      },
+      "Wednesday": {
+        "14:00": true,
+        "14:30": true,
+        "15:00": true,
+        "15:30": true
+      }
+    },
+    "Dieter": {
+      "Tuesday": {
+        "12:00": true,
+        "12:30": true,
+        "13:00": true,
+        "13:30": true,
+        "14:00": true,
+        "14:30": true,
+        "15:00": true,
+        "15:30": true
+      },
+      "Wednesday": {
+        "15:00": true,
+        "15:30": true
+      },
+      "Thursday": {
+        "09:00": true,
+        "09:30": true,
+        "10:00": true,
+        "10:30": true,
+        "11:00": true,
+        "11:30": true
+      }
+    }
+  }
+}
