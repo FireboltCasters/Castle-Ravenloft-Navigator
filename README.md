@@ -12,7 +12,7 @@
 </p>
 
 
-## Demo
+## Live Demo
 
 Live Demo: https://fireboltcasters.github.io/Castle-Ravenloft-Navigator/
 
