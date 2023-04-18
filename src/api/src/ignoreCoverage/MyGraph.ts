@@ -6,16 +6,34 @@ class MyRavenloftGraph {
 
     private graph: any;
     private secretDoorsFound: any;
-    private roomToMap: any;
+    private roomInformations: any;
+    private mapColors = {
+        "12": "#525252",
+        "11": "#C9C9C9",
+        "3": "#F2F2F2",
+        "4": "#75140C",
+        "5": "#F9DA78",
+        "6": "#DCE3F1",
+        "7": "#DCE3F1",
+        "8": "#DCE3F1",
+        "9": "#DCE3F1",
+    }
 
     constructor() {
         this.graph = {}
         this.secretDoorsFound = {}
-        this.roomToMap = {}
+        this.roomInformations = {};
     }
 
     getGraph() {
         return this.graph;
+    }
+
+    getMapColorOfRoom(room: string){
+        let roomInformation = this.roomInformations[room];
+        let map = roomInformation?.map;
+        // @ts-ignore
+        return this.mapColors?.[map];
     }
 
     setSecretDoorsFound(secretDoorsFound: any) {
@@ -28,12 +46,15 @@ class MyRavenloftGraph {
 
     addRoomsToMap(rooms: string[], map: string) {
         rooms.forEach(room => {
-            this.addRoomToMap(room, map)
+            this.addMapToRoom(room, map)
         });
     }
 
-    addRoomToMap(room: string, map: string) {
-        this.roomToMap[room] = map;
+    addMapToRoom(room: string, map: string) {
+        if(!this.roomInformations[room]){
+            this.roomInformations[room] = {};
+        }
+        this.roomInformations[room]["map"] = map;
     }
 
     addNode(node: string) {
@@ -485,6 +506,20 @@ myRavenloftGraph.addOneWayEdge("K88", "K87", 1);
 
 // Set Room to Map names
 
+
+myRavenloftGraph.addRoomsToMap(["K79", "K83", "K83a", "K78", "K77", "K76", "K80", "K74", "K73", "K75", "K81", "K21-B2", "K85", "K84", "K86", "K87", "K88", "K18-B2"], "12");
+myRavenloftGraph.addRoomsToMap(["K72", "K70", "K71", "K67", "K69", "K68", "K64-B1", "K66", "K65", "K61", "K62", "K63", "K18-B1"], "11");
+myRavenloftGraph.addRoomsToMap(["K12-1S", "K12-1N", "K13-1S", "K13-1N", "K22", "K1", "K7", "K13", "K19", "K11", "K10", "K8", "K9", "K20a", "K14", "K24", "K23", "K3", "K16", "K15", "K17", "K6", "K18-F1", "K20-F1", "K64-F1"], "3")
+myRavenloftGraph.addRoomsToMap(["K12-2S", "K12-SN", "K13-2S", "K13-2N", "K22-2S", "K22-2N", "K25", "K32", "K33", "K26", "K30", "K29", "K27", "K31", "K34", "K28", "K20-F1"], "4");
+myRavenloftGraph.addRoomsToMap(["K42", "K43", "K44", "K45", "K46", "K35", "K36", "K37", "K38", "K39", "K31b", "K40", "K41", "K20-F2"], "5");
+myRavenloftGraph.addRoomsToMap(["K47", "K48-M6", "K49", "K50", "K51", "K53", "K20-F3"], "6")
+myRavenloftGraph.addRoomsToMap(["K52", "K54", "K55", "K56"], "7");
+myRavenloftGraph.addRoomsToMap(["K57", "K58", "K20-F4"], "8")
+myRavenloftGraph.addRoomsToMap(["K60", "K60a"], "9");
+myRavenloftGraph.addRoomsToMap(["K59"], "10");
+
+
+
 export default class MyGraph {
 
     constructor() {
@@ -500,6 +535,10 @@ export default class MyGraph {
         const graph = myRavenloftGraph.getGraph()
         const path = dijkstrajs.find_path(graph, start, end);
         return path;
+    }
+
+    getMapColorOfRoom(room: string){
+        return myRavenloftGraph.getMapColorOfRoom(room);
     }
 
 }

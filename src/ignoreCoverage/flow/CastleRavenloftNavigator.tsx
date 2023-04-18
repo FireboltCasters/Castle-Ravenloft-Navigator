@@ -71,9 +71,14 @@ export const CastleRavenloftNavigator : FunctionComponent = (props) => {
     function renderShortestPath(){
         let renderedShortestPath = [];
         for(let i = 0; i < shortestPath.length; i++){
+            let room = shortestPath[i];
+            let mapColor = graph.getMapColorOfRoom(room);
+
             renderedShortestPath.push(
-                <div style={{padding: "10px", backgroundColor: "lightgray", borderRadius: "10px"}}>
-                    <h3 key={i}>{shortestPath[i]}</h3>
+                <div style={{padding: "10px", backgroundColor: mapColor, borderRadius: "10px"}}>
+                    <div style={{backgroundColor: "white"}}>
+                        <h3 key={i}>{room}</h3>
+                    </div>
                 </div>
             )
             if(i < shortestPath.length - 1){
