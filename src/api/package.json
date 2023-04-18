@@ -58,7 +58,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@babel/preset-typescript": "^7.14.5",
+    "@babel/preset-typescript": "^7.21.4",
     "csvtojson": "^2.0.10",
     "dijkstrajs": "^1.0.3",
     "eslint": "^7.32.0",
