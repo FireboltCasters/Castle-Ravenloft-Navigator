@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FireboltCasters/npm-template.git"
+    "url": "git+https://github.com/FireboltCasters/Castle-Ravenloft-Navigator"
   },
   "keywords": [
     "attestation",
@@ -43,9 +43,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FireboltCasters/npm-template/issues"
+    "url": "https://github.com/FireboltCasters/Castle-Ravenloft-Navigator/issues"
   },
-  "homepage": "https://github.com/FireboltCasters/npm-template#readme",
+  "homepage": "https://github.com/FireboltCasters/Castle-Ravenloft-Navigator",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^16.0.0",

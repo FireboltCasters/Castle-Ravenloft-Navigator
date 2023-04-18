@@ -60,7 +60,7 @@ export const CastleRavenloftNavigator : FunctionComponent = (props) => {
                     setShortestPath([])
                 }} placeholder="Destination Room"/>
                 <div style={{height: "10px"}}></div>
-                <Button disabled={!startRoom || !endRoom} label={"Calculate"} icon="pi pi-arrows-h" className="p-button-warning" style={{margin: 5}} onClick={() => {
+                <Button disabled={!startRoom || !endRoom} label={"Navigate"} icon="pi pi-arrows-h" className="p-button-warning" style={{margin: 5}} onClick={() => {
                     let calculatedShortestPath = graph.getShortestPath(startRoom, endRoom);
                     setShortestPath(calculatedShortestPath);
                 }} />
