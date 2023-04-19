@@ -16,6 +16,7 @@
 
 Live Demo: https://fireboltcasters.github.io/Castle-Ravenloft-Navigator/
 
+<a href="https://fireboltcasters.github.io/Castle-Ravenloft-Navigator/"><img src="https://raw.githubusercontent.com/FireboltCasters/Castle-Ravenloft-Navigator/main/demo.png" alt="Demo" /></a>
 
 ## Web Usage
 - Visit the demo page

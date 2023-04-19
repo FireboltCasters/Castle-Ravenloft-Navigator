@@ -18,6 +18,23 @@ const edgeCritical = "#ff2222";
 
 export const CastleRavenloftNavigator : FunctionComponent = (props) => {
 
+    function parseQueryString() {
+        let query = window.location.search.substring(1);
+        let pairs = query.split("&");
+        let result = {};
+        for (let i = 0; i < pairs.length; i++) {
+            let pair = pairs[i].split("=");
+            // @ts-ignore
+            result[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");
+        }
+        return result;
+    }
+
+    const queryParameters = parseQueryString();
+
+    console.log("queryParameters")
+    console.log(JSON.parse(JSON.stringify(queryParameters)));
+
     const toast = useRef(null);
 
     const [reloadNumber, setReloadNumber] = useState(0);
@@ -26,8 +43,37 @@ export const CastleRavenloftNavigator : FunctionComponent = (props) => {
     const [endRoom, setEndRoom] = useState("K9");
     const initialShortestPath: string[] = [];
     const [shortestPath, setShortestPath] = useState(initialShortestPath);
+    const [searchParams, setSearchParams] = useState(JSON.parse(JSON.stringify(queryParameters)));
 
     let graph = new MyGraph();
+
+    function mySetSearchParams(newSearchParams: any){
+        console.log("mySetSearchParams")
+        console.log(newSearchParams);
+        console.log(searchParams)
+        let newSearchParamsKeys = Object.keys(newSearchParams);
+        let queryString = "";
+        for(let i = 0; i < newSearchParamsKeys.length; i++){
+            let key = newSearchParamsKeys[i];
+            let value = newSearchParams[key];
+            if(!!value){
+                queryString += key + "=" + value;
+                if(i < newSearchParamsKeys.length - 1){
+                    queryString += "&";
+                }
+            }
+        }
+
+        if(JSON.stringify(newSearchParams) !== JSON.stringify(searchParams)){
+            console.log("mySetSearchParams: changed")
+            setSearchParams(newSearchParams);
+            console.log(newSearchParams)
+//        window.location.search = +"?"+searchParams.toString();
+            window.history.pushState(null, "", "?"+queryString);
+        } else {
+            console.log("mySetSearchParams: not changed")
+        }
+    }
 
     useEffect(() => {
         document.title = "Castle-Ravenloft-Navigator";
@@ -61,7 +107,18 @@ export const CastleRavenloftNavigator : FunctionComponent = (props) => {
                 }} placeholder="Destination Room"/>
                 <div style={{height: "10px"}}></div>
                 <Button disabled={!startRoom || !endRoom} label={"Navigate"} icon="pi pi-arrows-h" className="p-button-warning" style={{margin: 5}} onClick={() => {
-                    let calculatedShortestPath = graph.getShortestPath(startRoom, endRoom);
+                    let graphConfigured = new MyGraph();
+
+                    let searchParamKeys = Object.keys(searchParams);
+                    for(let i = 0; i < searchParamKeys.length; i++){
+                        let key = searchParamKeys[i];
+                        if(key.startsWith("sd:")){
+                            let secretDoorKey = key.substring("sd:".length);
+                            graphConfigured.activateSecretDoor(secretDoorKey);
+                        }
+                    }
+
+                    let calculatedShortestPath = graphConfigured.getShortestPath(startRoom, endRoom);
                     setShortestPath(calculatedShortestPath);
                 }} />
             </div>
@@ -89,7 +146,7 @@ export const CastleRavenloftNavigator : FunctionComponent = (props) => {
         return(
             <>
                 <div style={{marginLeft: 20}}><h2>{"Shortest Path"}</h2></div>
-                <div style={{display: "flex", flexDirection: "row", flex: 1, justifyContent: "center"}}>
+                <div style={{display: "flex", flexDirection: "row", flex: 1, justifyContent: "center", flexWrap: "wrap"}}>
                     {renderedShortestPath}
                 </div>
             </>
@@ -109,7 +166,7 @@ export const CastleRavenloftNavigator : FunctionComponent = (props) => {
                                 </div>
                             </div>
                             <div style={{display: "flex", flex: 1, flexDirection: "column", backgroundColor: "#EEEEEE"}}>
-                                <MyToolbar setReloadNumber={setReloadNumber} reloadNumber={reloadNumber} />
+                                <MyToolbar searchParams={JSON.parse(JSON.stringify(searchParams))} setSearchParams={mySetSearchParams} setReloadNumber={setReloadNumber} reloadNumber={reloadNumber} />
                             </div>
                         </div>
                 </div>
