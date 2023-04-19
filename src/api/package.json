@@ -1,6 +1,6 @@
 {
   "name": "castle-ravenloft-navigator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An API to calculate the precedence diagram method",
   "main": "index.js",
   "types": "index.d.ts",
