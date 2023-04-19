@@ -1,4 +1,6 @@
-<h1><a href="https://github.com/FireboltCasters/Castle-Ravenloft-Navigator"><img src="https://raw.githubusercontent.com/FireboltCasters/Castle-Ravenloft-Navigator/main/icon.png" width="100" heigth="100" /></a><a href="https://github.com/FireboltCasters/Castle-Ravenloft-Navigator">castle-ravenloft-navigator</a></h1><h2>A library and tool to distribute students with attestations evenly on examiners</h2>
+<h1><a href="https://github.com/FireboltCasters/Castle-Ravenloft-Navigator"><img src="https://raw.githubusercontent.com/FireboltCasters/Castle-Ravenloft-Navigator/main/icon.png" width="100" heigth="100" /></a><a href="https://github.com/FireboltCasters/Castle-Ravenloft-Navigator">castle-ravenloft-navigator</a></h1>
+
+<h2>A library and tool to find the shortest path inside the castle raventloft</h2>
 
 <p align="center">
   <a href="https://badge.fury.io/js/castle-ravenloft-navigator.svg"><img src="https://badge.fury.io/js/castle-ravenloft-navigator.svg" alt="npm package" /></a>
@@ -20,15 +22,14 @@ Live Demo: https://fireboltcasters.github.io/Castle-Ravenloft-Navigator/
 
 ## Web Usage
 - Visit the demo page
-- Select youe start and destination room
+- Select your start and destination room
 - Click on the "Navigate" button
 
 ## Roadmap
 
-- Add secret doors to be enabled by the DM
-- Add custom URL for players
-- Add custom URL for DM
-- Add automatic demo image generation
+- Add secret doors to be enabled by the DM [done]
+- Add custom URL for players [done]
+- Add custom URL for DM [no need]
 
 
 ## Installtion
