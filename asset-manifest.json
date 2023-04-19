@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/Castle-Ravenloft-Navigator/static/css/main.d7fa00bb.css",
-    "main.js": "/Castle-Ravenloft-Navigator/static/js/main.19d19839.js",
+    "main.css": "/Castle-Ravenloft-Navigator/static/css/main.0531389e.css",
+    "main.js": "/Castle-Ravenloft-Navigator/static/js/main.87397274.js",
     "static/js/787.28cb0dcd.chunk.js": "/Castle-Ravenloft-Navigator/static/js/787.28cb0dcd.chunk.js",
+    "static/media/primeicons.svg": "/Castle-Ravenloft-Navigator/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/primeicons.eot": "/Castle-Ravenloft-Navigator/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
+    "static/media/primeicons.woff": "/Castle-Ravenloft-Navigator/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
+    "static/media/primeicons.ttf": "/Castle-Ravenloft-Navigator/static/media/primeicons.91bacab1f083f2795272.ttf",
     "index.html": "/Castle-Ravenloft-Navigator/index.html",
-    "main.d7fa00bb.css.map": "/Castle-Ravenloft-Navigator/static/css/main.d7fa00bb.css.map",
-    "main.19d19839.js.map": "/Castle-Ravenloft-Navigator/static/js/main.19d19839.js.map",
+    "main.0531389e.css.map": "/Castle-Ravenloft-Navigator/static/css/main.0531389e.css.map",
+    "main.87397274.js.map": "/Castle-Ravenloft-Navigator/static/js/main.87397274.js.map",
     "787.28cb0dcd.chunk.js.map": "/Castle-Ravenloft-Navigator/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7fa00bb.css",
-    "static/js/main.19d19839.js"
+    "static/css/main.0531389e.css",
+    "static/js/main.87397274.js"
   ]
 }
